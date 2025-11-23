@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Equinox - Secure Login">
-    <title>Equinox | Login</title>
+    <title>Equinox</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="stars" aria-hidden="true"></div>
@@ -14,9 +16,9 @@
             <div class="card-header">
                 <div class="logo">
                     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="4"/>
-                        <circle cx="50" cy="50" r="25" fill="none" stroke="url(#gradient2)" stroke-width="2"/>
-                        <circle cx="50" cy="50" r="5" fill="#00ffff"/>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="4" />
+                        <circle cx="50" cy="50" r="25" fill="none" stroke="url(#gradient2)" stroke-width="2" />
+                        <circle cx="50" cy="50" r="5" fill="#00ffff" />
                         <defs>
                             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
@@ -32,51 +34,25 @@
                 <h1>Equinox</h1>
                 <p class="subtitle">Access the Singularity</p>
             </div>
-            
-            <form id="loginForm" class="login-form">
-                <div class="form-group">
-                    <label for="username" class="input-label">
-                        <span class="label-icon">⊚</span>
-                        Email / Username
-                    </label>
-                    <input 
-                        type="text" 
-                        id="username" 
-                        name="username" 
-                        class="form-input"
-                        required
-                        autocomplete="username"
-                        placeholder="Enter your credentials"
-                    >
+
+            <div class="info-content">
+                <p class="description">
+                    Internal non-public Equinox app for syncing our accounting SW with Etsy API.
+                </p>
+
+                <div class="contact-links">
+                    <a href="https://www.hellosingularity.com" target="_blank" class="contact-link">
+                        <span class="link-icon">🌐</span> Visit Main Site
+                    </a>
+                    <a href="mailto:mail@hellosingularity.com" class="contact-link">
+                        <span class="link-icon">✉️</span> Contact Support
+                    </a>
                 </div>
-                
-                <div class="form-group">
-                    <label for="password" class="input-label">
-                        <span class="label-icon">⚡</span>
-                        Password
-                    </label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        class="form-input"
-                        required
-                        autocomplete="current-password"
-                        placeholder="Enter your passcode"
-                    >
-                </div>
-                
-                <button type="submit" class="login-btn" id="loginBtn">
-                    <span class="btn-text">Authenticate</span>
-                    <span class="btn-loader" aria-hidden="true"></span>
-                </button>
-                
-                <div class="error-message" id="errorMessage" role="alert"></div>
-            </form>
+            </div>
         </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
 
+
+</body>
+
+</html>
